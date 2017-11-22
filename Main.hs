@@ -3,8 +3,9 @@ module Main where
 import A (addOne)
 import B (addTwo)
 
+x = addOne 2
+y = addTwo 3
+
 main = do
-  a <- addOne 1
-  b <- addTwo 3
-  return $ a + b
+  putStrLn $ show (x + y)
   
